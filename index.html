@@ -5,7 +5,11 @@
 </style>
 <script>
 function display(){
-document.getElementById('demo').innerHTML = Date();
+var demoelements = document.getElementsByClassName("demo");
+var i;
+for (i=0; i<demoelements.length;i++) {
+demoelements[i].innerHTML = Date();
+}
 }
 </script>
 </head>
@@ -13,6 +17,13 @@ document.getElementById('demo').innerHTML = Date();
 <h1> Hello </h1>
 <button type="button" onclick="display();">
 Click me to display Date and Time.</button>
-<p id="demo">This is our demo paragraph.</p>
+<p class="demo">This is our demo paragraph.</p>
+<p >This is paragraph.</p>
+<p class="demo">This is our demo paragraph.</p>
+<p >This is paragraph.</p>
+<p class="demo">This is our demo paragraph.</p>
+<p class="demo">This is our demo paragraph.</p>
+<p >This is paragraph.</p>
+
 </body>
 </html>
