@@ -4,11 +4,35 @@
 <style>
 </style>
 <script>
+function change(){
+var demoelements = document.getElementsByTagName("p");
+for(var i=0; i<demoelements.length;i++){
+demoelements[i].style.backgroundColor = "yellow";
+}
+
+var demoelements = document.getElementsByClassName("demo");
+for(var i=0; i<demoelements.length;i++){
+demoelements[i].style.color = "red";
+}
+document.getElementById("special").style.backgroundColor= "pink";
+}
+
 
 </script>
 </head>
 <body>
 <h1> Hello </h1>
-
+<button type="button" onclick="change();">
+change style</button>
+<h1 id="special" >This is SPECIAL title.</h1>
+<p class="demo">This is our demo paragraph.</p>
+<p >This is paragraph.</p>
+<p class="demo">This is our demo paragraph.</p>
+<p >This is paragraph.</p>
+<h1 >This is title.</h1>
+<p class="demo">This is our demo paragraph.</p>
+<p class="demo">This is our demo paragraph.</p>
+<p >This is paragraph.</p>
+<h1 >This is title.</h1>
 </body>
 </html>
